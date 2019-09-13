@@ -7,6 +7,9 @@ services:
 python:
   - '3.6'
 
+before_install:
+  - pip install --upgrade pip
+
 install:
   - pip install --upgrade setuptools
   - pip install -r requirement-dev.txt
