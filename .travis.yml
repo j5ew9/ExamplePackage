@@ -1,0 +1,14 @@
+language: python
+sudo: required
+
+services:
+  - docker
+
+python:
+  - '3.6'
+
+install:
+  - pip install --upgrade setuptools
+
+cache: pip
+
