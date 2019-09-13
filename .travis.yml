@@ -9,6 +9,9 @@ python:
 
 install:
   - pip install --upgrade setuptools
+  - pip install -r requirement-dev.txt
 
 cache: pip
 
+script:
+  - pytest
